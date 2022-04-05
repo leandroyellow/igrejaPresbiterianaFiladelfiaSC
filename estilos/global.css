@@ -1,0 +1,131 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+/* cabeçalho e menu início */
+
+header {
+   background: #baffd2;
+
+}
+
+.container {
+   margin: 0vh 7vw;
+   
+}
+
+.cabecalho {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 15px;
+}
+
+.cabecalho a {
+   text-decoration: none;
+}
+
+.logo {
+   height: 80px;
+}
+
+.nome h1,
+.nome h2 {
+   font-family: 'Nunito', sans-serif;
+   font-weight: bold;
+}
+
+.nome h1 {
+   font-size: 30px;
+}
+
+.nome h2 {
+   font-size: 15px;
+}
+
+.redes{
+   display: flex;
+}
+
+.imagem{
+   margin-left: 10px;
+}
+
+.imagem a {
+   text-decoration: none;
+}
+
+.imagem a img {
+   height: 30px;   
+}
+
+
+
+
+
+
+
+nav.menu {
+   background-color: #078C03;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.75);
+}
+
+.menu ul {
+   list-style-type: none;
+   display: flex;
+
+}
+
+.menu ul li {
+   padding: 5px 10px;
+
+}
+
+.menu ul li a {
+   color: #E8FFF2;
+   text-align: center;
+   padding: 2px 8px;
+   text-decoration: none;
+   transition: 1s;
+}
+
+.menu ul li a:hover {
+   background-color: #020659;
+   transition: 2s;
+}
+
+/* cabeçalho e menu fim */
+
+/* início da section carrossel */
+
+#carrossel{
+   background-image: url("../imagens/biblia.jpg");
+   background-position: center;
+   background-size: cover;
+   
+}
+
+.centralizar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 650px;
+   
+}
+
+.conteudo{
+   width: 1000px;
+   height: 600px;
+   background-color: blueviolet;
+}
+
