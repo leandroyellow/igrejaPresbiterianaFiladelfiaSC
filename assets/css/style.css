@@ -19,20 +19,20 @@
    font-family: var(--font-text);
 }
 .container {
-   width: 1360px;
+   max-width: 1360px;
    margin: auto;
 }
 
 
 header {
-   height: 120px;
    background-color: var(--color-verde-claro);
+   display: block;
 }
 header .header-logo{
+   height: 120px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   height: inherit;
 }
 .logo-right {
    height: 100px;
@@ -43,6 +43,8 @@ header .header-logo{
 }
 .logo-center h1 {
    font-size: 40px;
+   font-family: var(--font-title);
+   font-weight: bold;
 }
 .logo-left {
    display: flex;
@@ -53,7 +55,8 @@ header .header-logo{
    width: 30px;
    height: 30px;
    overflow: hidden;
-   border-radius: 50%;margin-left: 10px;
+   border-radius: 50%;
+   margin-left: 10px;
    cursor: pointer;
 }
 .logo-left .social img {
@@ -61,3 +64,69 @@ header .header-logo{
    height: 100%;
 }
 
+.header-menu {
+   background-color: var(--color-verde-escuro);
+   height: 30px;
+   display: flex;
+   justify-content: center;
+}
+.header-menu nav {
+
+}
+.header-menu nav ul {
+   display: flex;
+   justify-content: center;
+}
+.header-menu nav ul li {
+   list-style: none;
+}
+.header-menu nav ul li a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: var(--color-branco);
+   padding: 0px 10px;
+   font-weight: bold;
+   font-size: 18px;
+   font-family: var(--font-title);
+   border-bottom: 3px solid var(--color-verde-escuro);
+}
+.header-menu nav ul li a:hover {
+   color: var(--color-preto);
+   border-bottom: 3px solid var(--color-verde-claro);
+}
+
+.banner {
+   background-color: rgb(168, 157, 202);
+   height: calc(100vh - 150px);
+   overflow: hidden;
+}
+.slider-controls {
+   position: absolute;
+   z-index: 99;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.slider-control {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   overflow: hidden;
+   cursor: pointer;
+}
+.slider-control img {
+   width: 100%;
+   height: auto;
+}
+.banner .sliders {
+   display: flex;
+   height: 100%;
+   transition: all ease 0.3s;
+}
+.banner .slider {
+   width: 100vw;
+   height: inherit;
+   background-position: center;
+   background-size: cover;
+}
